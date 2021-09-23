@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <style>
+      @media (max-width: 767px) {
+        #banner {
+          text-align: center;
+        }
+      }
+      body {
+        background-color: #d6e4ff;
+      }
+
+      .banner-image {
+        background-image: url("img/bg-1.png");
+        background-size: cover;
+        background-position-x: right;
+      }
+
+      #blog,
+      #team {
+        background-color: rgb(47, 110, 247);
+        padding-top: 1%;
+        padding-bottom: 2%;
+      }
+
+      #contact {
+        background-image: url("img/bg-2.png");
+        background-size: cover;
+        padding-top: 5%;
+      }
+
+      #about,
+      #portfolio,
+      #blog,
+      #team,
+      #contact {
+        padding-top: 3rem;
+      }
+
+      #gallery-modal .modal-img {
+        width: 100%;
+      }
+
+      #portfolio img {
+        cursor: pointer;
+      }
+    </style>
+
+    <title>Abdul Hanif</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="navbar">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+          <a href="#" class="navbar-brand">ABDUL HANIF</a>
+          <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-lable="Toggle Navbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="#" class="nav-link text-white">HOME</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link text-white">ABOUT</a></li>
+              <li class="nav-item"><a href="#portfolio" class="nav-link text-white">PORTFOLIO</a></li>
+              <li class="nav-item"><a href="#blog" class="nav-link text-white">BLOG</a></li>
+              <li class="nav-item"><a href="#team" class="nav-link text-white">TEAM</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link text-white">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- End of Navbar -->
+    <!-- Banner -->
+    <section id="banner">
+      <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="container-fluid">
+          <div class="row justify-content-around align-items-center">
+            <div class="col-md-4 text-center p-3">
+              <img src="img/photo.png" alt="Abdul Hanif" width="250" />
+              <div class="media-icon p-4">
+                <a href="mailto: hanifabdul26@yahoo.com" target="_blank"><img src="img/icon-email.png" alt="hanifabdul26@yahoo.com" width="40" /></a>
+                <a href="https://github.com/dulhnf" target="_blank"><img src="img/icon-github.png" alt="github/dulhnf" width="40" class="mx-2" /></a>
+                <a href="https://www.linkedin.com/in/abdul-hanif-4014605b/" target="_blank"><img src="img/icon-linkedin.png" alt="linkedin/dulhnf" width="40" /></a>
+              </div>
+            </div>
+            <div class="col-md-4 text-white p-3">
+              <h2>Hi, I am</h2>
+              <h1 class="fw-bold fs-1">Abdul Hanif</h1>
+              <h6 class="text-white-50">2D CADD Drafter</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Banner -->
+    <!-- About -->
+    <section id="about">
+      <div class="container-sm">
+        <div class="row justify-content-center text-center my-5">
+          <div class="col">
+            <h2>ABOUT</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-9 fs-5 mb-5">
+            <h4>Hello.</h4>
+            <p>
+              My name is Abdul Hanif. I currently spend my day as 2D CADD drafter for washroom refurbishments company in London as freelancer. I have about 8 years experience in creating architectural drawings, especially in steel work
+              drawings. I am also a little able to work on steel work drawings using Tekla Structure.
+            </p>
+            <br />
+            <p>
+              I'm currently trying to learn about programming, I want to be able to front end and back end development and create mobile applications for android and iOS. In the future I want to be able to create my own website and
+              application.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About -->
+    <br /><br /><br /><br />
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <div class="container-sm">
+        <div class="row justify-content-center text-center my-5">
+          <div class="col">
+            <h2>PORTFOLIO</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img class="gallery-item" src="img/portfolio-1.jpg" alt="Portfolio1" />
+              <div class="card-body">
+                <p class="card-text">3D Outdoor Home Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img class="gallery-item" src="img/portfolio-2.jpg" alt="Portfolio2" />
+              <div class="card-body">
+                <p class="card-text">2D Home Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img class="gallery-item" src="img/portfolio-3.jpg" alt="Portfolio3" />
+              <div class="card-body">
+                <p class="card-text">2D Warehouse Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img class="gallery-item" src="img/portfolio-4.jpg" alt="Portfolio4" />
+              <div class="card-body">
+                <p class="card-text">Photography Portfolio</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img class="gallery-item" src="img/portfolio-5.jpg" alt="Portfolio5" />
+              <div class="card-body">
+                <p class="card-text">Long Exposure Photography</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img class="gallery-item" src="img/portfolio-6.jpg" alt="Portfolio6" />
+              <div class="card-body">
+                <p class="card-text">Photography Portfolio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Portfolio -->
+    <!-- Blog -->
+    <section id="blog">
+      <div class="container-sm">
+        <div class="row text-white justify-content-center text-center my-5">
+          <div class="col">
+            <h2>BLOG</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/drafter.jpg" class="card-img-top" alt="Drafter" />
+              <div class="card-body">
+                <h5 class="card-title">Drafter</h5>
+                <p class="card-text">A drafter, draughtsman / draughtswoman (British English and Commonwealth English),...</p>
+                <a href="https://en.wikipedia.org/wiki/Drafter" target="_blank" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/programming.jpg" class="card-img-top" alt="Programming" />
+              <div class="card-body">
+                <h5 class="card-title">Computer Programming</h5>
+                <p class="card-text">Computer programming is the process of designing and building an executable...</p>
+                <a href="https://en.wikipedia.org/wiki/Computer_programming" target="_blank" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/photography.webp" class="card-img-top" alt="Photography" />
+              <div class="card-body">
+                <h5 class="card-title">Photography</h5>
+                <p class="card-text">Photographic" redirects here. For the image obtained, see Photograph....</p>
+                <a href="https://en.wikipedia.org/wiki/Photography" target="_blank" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Blog -->
+    <!-- Team -->
+    <section id="team">
+      <div class="container-sm">
+        <div class="row text-white justify-content-center text-center my-5">
+          <div class="col">
+            <h2>TEAM</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3 mb-5">
+            <div class="card text-center p-3">
+              <img src="img/photo.png" class="card-img-top" alt="Abdul Hanif" />
+              <div class="card-body">
+                <h5 class="card-title">Abdul Hanif</h5>
+                <p class="card-text text-black-50">2D Drafter</p>
+                <a href="https://www.linkedin.com/in/abdul-hanif-4014605b/" target="_blank" class="btn btn-primary">My Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Team -->
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container-sm">
+        <div class="row justify-content-center text-center my-5">
+          <div class="col">
+            <h2>CONTACT</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary mb-5">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Contact -->
+    <!-- Footer -->
+    <footer class="bg-primary text-white justify-content-center text-center p-4">
+      <p>
+        Created by
+        <a href="https://www.linkedin.com/in/abdul-hanif-4014605b/" class="text-white fw-bold" target="_blank">ABDUL HANIF</a>
+      </p>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/portfolio-1.jpg" class="modal-img" alt="modal img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Modal -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script>
+      var nav = document.querySelector("nav");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("bg-primary", "shadow");
+        } else {
+          nav.classList.remove("bg-primary", "shadow");
+        }
+      });
+      document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("gallery-item")) {
+          const src = e.target.getAttribute("src");
+          document.querySelector(".modal-img").src = src;
+          const myModal = new bootstrap.Modal(document.getElementById("gallery-modal"));
+          myModal.show();
+        }
+      });
+    </script>
+  </body>
+</html>
